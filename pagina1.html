@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador - Mi Sitio Web</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #db49f8, #b05ff1);
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background: linear-gradient(90deg, rgba(108, 56, 190, 0.8), rgba(143, 70, 226, 0.8));
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      color: #ffeb3b !important;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+      font-size: 2.5rem;
+      margin-top: 50px;
+      animation: shine 2s ease-out infinite;
+    }
+    @keyframes shine {
+      0% { text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); }
+      50% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8); }
+      100% { text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); }
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 300px; 
+      object-fit: cover; 
+      border: 2px solid #fff; 
+      border-radius: 10px; 
+    }
+    .carousel-inner {
+      background-color: #fff; 
+      padding: 10px; 
+      border-radius: 10px; 
+    }
+    footer {
+      background-color: #333;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      font-size: 1.2rem;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    }
+    footer p {
+      margin: 0;
+    }
+    footer:hover {
+      background-color: #444;
+      box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+
+
+<body class="text-center">
+
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Smash or pass</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pagina1.html">Comida</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina2.html">Rock Nacional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina3.html">Peliculas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina4.html">Tatuajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina6.html">Trap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina7.html">Amigas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina8.html">Uñas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina9.html">Flores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina5.html">Resultado</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        
+      </div>
+      <div class="col">
+        <div id="carouselExample" class="carousel slide" >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/brownie3.jpg" class="d-block w-90" alt="..." >
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/cafe3.jpg" class="d-block w-90" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/chocotorta3.jpg" class="d-block w-90" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/medialunas3.jpg" class="d-block w-90" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/papas3.jpg" class="d-block w-90" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/pizzas3.jpg" class="d-block w-90" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/sushi.jpg"class="d-block w-90" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/tortasfritas3.jpg" class="d-block w-90" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/tortilla3.jpg"class="d-block w-90" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+      </div>
+      <div class="col">
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="container my-5">
+    <h2>Smash or pass</h2>
+    <p id="valor-contador">0</p>
+    <button id="incrementar">+</button>
+    <button id="decrementar">-</button>
+    <button id="guardar" class="btn btn-primary">Guardar</button>
+</div>
+
+<div class="container saved-numbers">
+    
+    <ul id="lista-numeros">
+    </ul>
+</div>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
+
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<script>
+  let contador = 0;
+
+  
+  const botonIncrementar = document.getElementById('incrementar');
+  const botonDecrementar = document.getElementById('decrementar');
+  const botonGuardar = document.getElementById('guardar');
+  const valorContador = document.getElementById('valor-contador');
+  const listaNumeros = document.getElementById('lista-numeros');
+
+  
+  function obtenerNumerosGuardados() {
+    const numerosGuardados = localStorage.getItem('numerosGuardados');
+    return numerosGuardados ? JSON.parse(numerosGuardados) : [];
+  }
+
+  
+  function guardarNumeros(numeros) {
+    localStorage.setItem('numerosGuardados', JSON.stringify(numeros));
+  }
+
+  
+  function actualizarContador() {
+    valorContador.textContent = contador;
+  }
+
+  
+  function actualizarListaGlobal() {
+    listaNumeros.innerHTML = ''; 
+    const numerosGuardados = obtenerNumerosGuardados();
+    numerosGuardados.forEach(numero => {
+      const li = document.createElement('li');
+      li.textContent = numero;
+      listaNumeros.appendChild(li);
+    });
+  }
+
+  
+  actualizarListaGlobal();
+
+  
+  botonIncrementar.addEventListener('click', () => {
+    contador++;
+    actualizarContador();
+  });
+
+  
+  botonDecrementar.addEventListener('click', () => {
+    if (contador > 0) {
+      contador--;
+      actualizarContador();
+    }
+  });
+
+  
+  botonGuardar.addEventListener('click', () => {
+    const numerosGuardados = obtenerNumerosGuardados();
+    numerosGuardados.push(contador); 
+    guardarNumeros(numerosGuardados); 
+    actualizarListaGlobal(); 
+  });
+</script>
+
+
+
+
+
+  
+
